@@ -1,7 +1,7 @@
 .no-webp .bg_main-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url("../img/main/bg-1.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-1.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-1.jpg"); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url("../img/main/bg-1.jpg") center/cover no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-1.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-1.jpg") center/cover no-repeat; }
 
 .bg_main-1 {
   min-height: 600px;
@@ -69,9 +69,9 @@
 }
 
 .no-webp .bg_main-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url("../img/main/bg-2.jpg");
-  background: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url("../img/main/bg-2.jpg");
-  background: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url("../img/main/bg-2.jpg"); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url("../img/main/bg-2.jpg") left/cover no-repeat;
+  background: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url("../img/main/bg-2.jpg") left/cover no-repeat;
+  background: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url("../img/main/bg-2.jpg") left/cover no-repeat; }
 
 .bg_main-2 {
   min-height: 740px;
@@ -196,9 +196,9 @@
 }
 
 .no-webp .bg_main-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url("../img/main/bg-3.jpg");
-  background: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url("../img/main/bg-3.jpg");
-  background: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url("../img/main/bg-3.jpg"); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url("../img/main/bg-3.jpg") center/cover no-repeat;
+  background: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url("../img/main/bg-3.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url("../img/main/bg-3.jpg") center/cover no-repeat; }
 
 .bg_main-3 {
   min-height: 740px;
@@ -263,6 +263,23 @@
   }
 }
 
+@media (max-width: 720px) {
+  .no-webp .bg_main-1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url("../img/main/bg-1-mobile.jpg") bottom/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-1-mobile.jpg") bottom/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-1-mobile.jpg") bottom/cover no-repeat; }
+
+  .no-webp .bg_main-2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url("../img/main/bg-2-mobile.jpg") bottom/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-2-mobile.jpg") bottom/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-2-mobile.jpg") bottom/cover no-repeat; }
+
+  .no-webp .bg_main-3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url("../img/main/bg-3-mobile.jpg") center/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-3-mobile.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("../img/main/bg-3-mobile.jpg") center/cover no-repeat; }
+}
+
 @media (max-width: 500px) {
   .nuts-vitamins__slide h2 {
     font-size: 30px;
@@ -283,8 +300,20 @@
   }
 }
 
-.webp .bg_main-1 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url(../img/main/bg-1.webp); background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-1.webp); background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-1.webp); }
+.webp .bg_main-1 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url(../img/main/bg-1.webp) center/cover no-repeat; background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-1.webp) center/cover no-repeat; background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-1.webp) center/cover no-repeat; }
 
-.webp .bg_main-2 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url(../img/main/bg-2.webp); background: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/bg-2.webp); background: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/bg-2.webp); }
+.webp .bg_main-2 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url(../img/main/bg-2.webp) left/cover no-repeat; background: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/bg-2.webp) left/cover no-repeat; background: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/bg-2.webp) left/cover no-repeat; }
 
-.webp .bg_main-3 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url(../img/main/bg-3.webp); background: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/bg-3.webp); background: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/bg-3.webp); }
+.webp .bg_main-3 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url(../img/main/bg-3.webp) center/cover no-repeat; background: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/bg-3.webp) center/cover no-repeat; background: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/bg-3.webp) center/cover no-repeat; }
+
+@media (max-width: 720px) {
+
+  .webp .bg_main-1 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url(../img/main/bg-1-mobile.webp) bottom/cover no-repeat; background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-1-mobile.webp) bottom/cover no-repeat; background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-1-mobile.webp) bottom/cover no-repeat; } }
+
+@media (max-width: 720px) {
+
+  .webp .bg_main-2 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url(../img/main/bg-2-mobile.webp) bottom/cover no-repeat; background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-2-mobile.webp) bottom/cover no-repeat; background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-2-mobile.webp) bottom/cover no-repeat; } }
+
+@media (max-width: 720px) {
+
+  .webp .bg_main-3 { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.42)), to(rgba(0, 0, 0, 0.42))), url(../img/main/bg-3-mobile.webp) center/cover no-repeat; background: -o-linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-3-mobile.webp) center/cover no-repeat; background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(../img/main/bg-3-mobile.webp) center/cover no-repeat; } }

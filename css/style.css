@@ -255,6 +255,7 @@
   src: local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.woff") format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -262,6 +263,7 @@
   src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -269,6 +271,7 @@
   src: local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.woff") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -276,6 +279,7 @@
   src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -283,6 +287,7 @@
   src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -290,6 +295,7 @@
   src: local("Raleway-ExtraBold"), url("../fonts/Raleway-ExtraBold.woff") format("truetype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -297,6 +303,7 @@
   src: local("Raleway-Medium"), url("../fonts/Raleway-Medium.woff") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -304,6 +311,7 @@
   src: local("Raleway-SemiBold"), url("../fonts/Raleway-SemiBold.woff") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -311,6 +319,7 @@
   src: local("Raleway-Regular"), url("../fonts/Raleway-Regular.woff") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -318,6 +327,7 @@
   src: local("Raleway-Bold"), url("../fonts/Raleway-Bold.woff") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -325,6 +335,7 @@
   src: local("Raleway-SemiBoldItalic"), url("../fonts/Raleway-SemiBoldItalic.woff") format("truetype");
   font-weight: 600;
   font-style: italic;
+  font-display: swap;
 }
 
 .item-goods {
