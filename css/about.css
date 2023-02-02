@@ -186,6 +186,10 @@
   padding: 87px 0px;
 }
 
+.contacts-about {
+  padding: 107px 0px;
+}
+
 @media (max-width: 1300px) {
   .production__info p {
     max-width: 550px !important;
@@ -232,6 +236,10 @@
   .company-story__boss_info {
     max-width: 500px;
     width: 100%;
+  }
+
+  .contacts-about {
+    padding: 10px 0px;
   }
 }
 

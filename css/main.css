@@ -261,6 +261,10 @@
   .goods__list.goods_hide > *:nth-child(n+3) {
     display: none;
   }
+
+  .contacts-main {
+    padding: 10px 0px;
+  }
 }
 
 @media (max-width: 720px) {
