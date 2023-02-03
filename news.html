@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device - width, initial-scale = 1.0">
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20230203002317">
-    <link rel="stylesheet" href="css/news.min.css?_v=20230203002317">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230203210528">
+    <link rel="stylesheet" href="css/news.min.css?_v=20230203210528">
     <title>Новини та статті</title>
 </head>
 
@@ -13,15 +13,15 @@
     <header class="header">
 
     <div class="header__top">
-        <img class="header__social" src="img/icons/social.svg" alt="social">
+        <img class="header__social svg-social" src="img/icons/social.svg" alt="social">
         <span>Ваша персональная скидка - 5%</span>
         <div class="header__profile">
-            <a href="#"><img src="img/icons/man.svg" alt="man">Вход</a>
+            <a href="#"><img class="svg-man" src="img/icons/man.svg" alt="man">Вход</a>
             <a href="#">Регистрация</a>
 
             <div class="language-list list" id="language-list">
                 <label class="language-list__value list__value">Ru</label>
-                <img src="img/icons/arrow-bottom.svg" alt="arrow-bottom">
+                <img class="svg-arrow-bottom" src="img/icons/arrow-bottom.svg" alt="arrow-bottom">
                 <div class="language-list__items list__items"></div>
             </div>
 
@@ -32,14 +32,14 @@
             <span></span>
         </button>
         <a href="index.html" class="header__logo">
-            <img src="img/icons/logo.svg" alt="logo">
+            <img class="svg-logo" src="img/icons/logo.svg" alt="logo">
             <span>ОРЕХ<br>ПРИЧЕРНОМОРЬЯ</span>
         </a>
         <div class="header__contacts">
             <div class="header__contacts_icons">
-                <a href="#"><img src="img/icons/viber.svg" alt="social"></a>
-                <a href="#"><img src="img/icons/telegram.svg" alt="social"></a>
-                <a href="#"><img src="img/icons/whatsapp.svg" alt="social"></a>
+                <a href="#"><img class="svg-viber" src="img/icons/viber.svg" alt="social"></a>
+                <a href="#"><img class="svg-telegram" src="img/icons/telegram.svg" alt="social"></a>
+                <a href="#"><img class="svg-whatsapp" src="img/icons/whatsapp.svg" alt="social"></a>
             </div>
             <div class="header__contacts_column">
                 <a href="#"><span>+38 (044)</span> 750-50-11</a>
@@ -49,7 +49,7 @@
             <span>Ждем Вашего звонка<br> ежедневно с 9 до 18</span>
         </div>
         <div class="header__shoping-card">
-            <img src="img/icons/bag.svg" alt="bag">
+            <img class="svg-bag" src="img/icons/bag.svg" alt="bag">
         </div>
     </div>
     <div class="header__menu">
@@ -80,7 +80,7 @@
         <h2>Новости и статьи</h2>
         <p>Свежие новости и полезная информация</p>
         <div class="main-news__content">
-            <picture><source srcset="img/news/pavel_tulba.webp" type="image/webp"><img src="img/news/pavel_tulba.jpg" alt="Pavel Tulba"></picture>
+            <picture><source srcset="img/news/pavel_tulba.webp" type="image/webp"><img loading="eager" src="img/news/pavel_tulba.jpg" alt="Pavel Tulba"></picture>
             <div class="main-news__text">
                 <span class="main-news__text_date">12.04.2019</span>
                 <h4>Центр поддержки экспорта,<br>
@@ -93,8 +93,8 @@
                     зарабатывать десятки тысяч долларов в год всего
                     на нескольких гектарах земли.
                 </p><br>
-                <a href="#" class="arrow-button"><span>Читать</span><img src="img/icons/arrow-right-black.svg"
-                        alt="arrow"></a>
+                <a href="#" class="arrow-button"><span>Читать</span><img class="svg-arrow-right-black" loading="lazy"
+                        src="img/icons/arrow-right-black.svg" alt="arrow"></a>
             </div>
         </div>
     </section>
@@ -104,30 +104,32 @@
     <h2>Новости</h2>
     <p>Свежие новости и полезная информация</p>
     <div class="news__slider_control">
-        <div class="swiper-button-prev"><img style="transform: rotate(180deg);" src="img/icons/arrow-white.svg"
-                alt="prev"></div>
-        <div class="swiper-button-next"><img src="img/icons/arrow-white.svg" alt="next"></div>
+        <div class="swiper-button-prev"><img class="svg-arrow-white" loading="lazy" style="transform: rotate(180deg);"
+                src="img/icons/arrow-white.svg" alt="prev"></div>
+        <div class="swiper-button-next"><img class="svg-arrow-white" loading="lazy" src="img/icons/arrow-white.svg"
+                alt="next"></div>
     </div>
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div>
-                <picture><source srcset="img/main/news-1.webp" type="image/webp"><img src="img/main/news-1.jpg" alt="news"></picture>
+                <picture><source srcset="img/main/news-1.webp" type="image/webp"><img loading="lazy" src="img/main/news-1.jpg" alt="news"></picture>
                 <div class="news__text">
                     <span class="news__date">12.04.2019</span>
                     <h6>Центр поддержки экспорта, в студии<br>
                         Павел Тулба</h6>
                     <p>Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
                         садоводов, не смотря на большой спрос в Европе и отличную...</p>
-                    <a href="one-news.html" class="arrow-button"><span>Читать</span><img
-                            src="img/icons/arrow-right-black.svg" alt="arrow"></a>
+                    <a href="one-news.html" class="arrow-button"><span>Читать</span><img class="svg-arrow-right-black"
+                            loading="lazy" src="img/icons/arrow-right-black.svg" alt="arrow"></a>
                 </div>
             </div>
         </div>
         <div class="swiper-slide">
             <div>
                 <div class="news__video">
-                    <picture><source srcset="img/main/news-2.webp" type="image/webp"><img src="img/main/news-2.jpg" alt="news"></picture>
-                    <button class="play-button"><img src="img/icons/play.svg" alt="play"></button>
+                    <picture><source srcset="img/main/news-2.webp" type="image/webp"><img loading="lazy" src="img/main/news-2.jpg" alt="news"></picture>
+                    <button class="play-button"><img class="svg-play" loading="lazy" src="img/icons/play.svg"
+                            alt="play"></button>
                 </div>
                 <div class="news__text">
                     <span class="news__date">12.04.2019</span>
@@ -136,14 +138,14 @@
                     <p>Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
                         садоводов, не смотря на большой спрос в Европе
                         и отличную...</p>
-                    <a href="404.html" class="arrow-button"><span>Читать</span><img
-                            src="img/icons/arrow-right-black.svg" alt="arrow"></a>
+                    <a href="404.html" class="arrow-button"><span>Читать</span><img class="svg-arrow-right-black"
+                            loading="lazy" src="img/icons/arrow-right-black.svg" alt="arrow"></a>
                 </div>
             </div>
         </div>
         <div class="swiper-slide">
             <div>
-                <picture><source srcset="img/main/news-3.webp" type="image/webp"><img src="img/main/news-3.jpg" alt="news"></picture>
+                <picture><source srcset="img/main/news-3.webp" type="image/webp"><img loading="lazy" src="img/main/news-3.jpg" alt="news"></picture>
                 <div class="news__text">
                     <span class="news__date">12.04.2019</span>
                     <h6>Сертификация органического
@@ -151,21 +153,22 @@
                     <p>Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших
                         садоводов, не смотря на большой спрос в Европе
                         и отличную...</p>
-                    <a href="404.html" class="arrow-button"><span>Читать</span><img
-                            src="img/icons/arrow-right-black.svg" alt="arrow"></a>
+                    <a href="404.html" class="arrow-button"><span>Читать</span><img class="svg-arrow-right-black"
+                            loading="lazy" src="img/icons/arrow-right-black.svg" alt="arrow"></a>
                 </div>
             </div>
         </div>
     </div>
-    <div><a href="#" class="button button_white">Смотреть все новости</a></div>
+    <div><a href="news.html" class="button button_white">Смотреть все новости</a></div>
 </div>
     </section>
 
     <section class="video-news container">
         <div class="video-news__data">
-            <picture><source srcset="img/about/gallery-3.webp" type="image/webp"><img src="img/about/gallery-3.jpg" alt="gallery"></picture>
+            <picture><source srcset="img/about/gallery-3.webp" type="image/webp"><img loading="lazy" src="img/about/gallery-3.jpg" alt="gallery"></picture>
             <div class="gallery__item_video-big">
-                <button class="play-button"><img src="img/icons/play.svg" alt="play"></button>
+                <button class="play-button"><img class="svg-play" loading="lazy" src="img/icons/play.svg"
+                        alt="play"></button>
                 <h4>Проект UBHDP </h4>
                 <p>Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP
                     за
@@ -181,23 +184,23 @@
     <div class="contacts__info info-contacts">
         <h2>Контакты</h2>
         <div class="info-contacts__tel">
-            <img src="img/icons/tel.svg" alt="phone">
+            <img class="svg-tel" loading="lazy" src="img/icons/tel.svg" alt="phone">
             <div class="info-contacts__mobile">
                 <a href="tel:+38 (095) 711 11 11">+38 (095) 711 11 11</a><br>
                 <a href="tel:+38 (095) 711 11 11">+38 (095) 711 11 11</a>
             </div>
             <div class="header__contacts_icons info-contacts__social">
-                <a href="#"><img src="img/icons/viber.svg" alt="social"></a>
-                <a href="#"><img src="img/icons/telegram.svg" alt="social"></a>
-                <a href="#"><img src="img/icons/whatsapp.svg" alt="social"></a>
+                <a href="#"><img class="svg-viber" loading="lazy" src="img/icons/viber.svg" alt="social"></a>
+                <a href="#"><img class="svg-telegram" loading="lazy" src="img/icons/telegram.svg" alt="social"></a>
+                <a href="#"><img class="svg-whatsapp" loading="lazy" src="img/icons/whatsapp.svg" alt="social"></a>
             </div>
         </div>
         <div class="info-contacts__mail">
-            <img src="img/icons/mail.svg" alt="mail">
+            <img class="svg-mail" loading="lazy" src="img/icons/mail.svg" alt="mail">
             <a href="mail:nuts@nbsc.com.ua">nuts@nbsc.com.ua</a>
         </div>
         <div class="info-contacts__office">
-            <img src="img/icons/office.svg" alt="office">
+            <img class="svg-office" loading="lazy" src="img/icons/office.svg" alt="office">
             <div>
                 <h5>Офис и отдел продаж</h5>
                 <p>Украина, г. Одесса,<br>
@@ -205,7 +208,7 @@
             </div>
         </div>
         <div class="info-contacts__dev">
-            <img src="img/icons/tree.svg" alt="tree">
+            <img class="svg-tree" loading="lazy" src="img/icons/tree.svg" alt="tree">
             <div>
                 <h5>Производство</h5>
                 <p>Украина, Одесская обл,<br>
@@ -214,15 +217,15 @@
         </div>
     </div>
     <div class="contacts__map">
-        <iframe title="googlemap"
+        <iframe title="googlemap" loading="lazy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.8611266485873!2d30.713265815690825!3d46.431632076389526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633a651e3fd09%3A0x9331380952bbfd2c!2z0YPQuy4g0JrQvtGB0LzQvtC90LDQstGC0L7QsiwgMzIsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1562091107203!5m2!1sru!2sua"
             width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 </section>
     </section>
     <footer>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230203002317"></script>
-    <script src="js/script.min.js?_v=20230203002317"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230203210528"></script>
+    <script src="js/script.min.js?_v=20230203210528"></script>
 </footer>
 </body>
 
