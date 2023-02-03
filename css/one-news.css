@@ -1,4 +1,89 @@
+.main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+}
+
 .main-content {
   max-width: 990px;
   width: 100%;
+  padding: 108px 0px;
+}
+
+.main-content h3 {
+  letter-spacing: normal;
+  line-height: 36px;
+  margin-left: -2px;
+}
+
+.main-content h4 {
+  margin-top: 37px;
+  margin-bottom: 23px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+.main-content div + h4 {
+  margin-top: -4px !important;
+}
+
+.main-content p {
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: normal;
+}
+
+.main-content div:has(picture) {
+  margin-bottom: 23px;
+}
+
+.main-content__date {
+  display: block;
+  margin: 11px 0px 29px -2px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  line-height: 22px;
+  color: #8A8A8A;
+}
+
+.main-content__list {
+  margin-top: 18px;
+  margin-bottom: 31px;
+}
+
+.main-content__list p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+.main-content__list li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.main-content__list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.main-content__list li:nth-child(2) {
+  margin-top: -2px;
+}
+
+.main-content__list li::marker {
+  color: #337D5A;
+}
+
+.contacts-one-news {
+  padding: 73px 0px;
+}
+
+@media (max-width: 920px) {
+  .contacts-one-news {
+    padding: 10px 0px;
+  }
 }
