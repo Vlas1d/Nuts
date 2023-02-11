@@ -1,6 +1,9 @@
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 
 .header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,6 +14,15 @@
   min-height: 179px;
   width: 100%;
   padding: 6px 5% 0px;
+  background: #fff;
+  z-index: 998;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header.opacity-header {
+  opacity: 0.5;
 }
 
 .header__top {
@@ -154,6 +166,169 @@
   margin: auto auto 0px;
 }
 
+.header__burger {
+  position: fixed;
+  top: 0px;
+  left: -150vw;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #fff;
+  z-index: 999;
+}
+
+.header__burger .burger-close {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 21px;
+  height: 21px;
+}
+
+.header__burger .burger-close span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 2px;
+  background: #000;
+  -webkit-transform: rotate(45deg) translate(8px, 8px);
+      -ms-transform: rotate(45deg) translate(8px, 8px);
+          transform: rotate(45deg) translate(8px, 8px);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+
+.header__burger .burger-close span::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #000;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.header__burger_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px 20px 15px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.header__burger_logo img {
+  margin-right: 20px;
+}
+
+.header__burger_profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px 30px;
+  margin: 7px 0px 0px 0px;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #323232;
+}
+
+.header__burger_profile a:hover {
+  border-bottom: 2px solid #93B474;
+}
+
+.header__burger_profile a:not(:last-child) {
+  margin-right: 26px;
+}
+
+.header__burger_profile a:first-child img {
+  margin: 0px 7px -1px 0px;
+}
+
+.header__burger .burger-menu {
+  position: relative;
+  margin-top: 20px;
+  z-index: 2;
+  background: #fff;
+}
+
+.header__burger .burger-menu__item {
+  padding: 20px 20px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+}
+
+.header__burger .burger-menu__item:hover {
+  background: #337D5A;
+  color: #fff;
+}
+
+.header__burger .burger-menu__item_active {
+  border: 2px solid #337D5A;
+  background: rgba(51, 125, 90, 0.3058823529);
+}
+
+.no-webp .header__burger_bg{
+  background: url("../img/burger-fon.jpg") top/cover no-repeat; }
+
+.header__burger_bg {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  max-width: 100vw;
+  width: 100%;
+  min-height: 191px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.header__burger_bg h2 {
+  margin-top: 10px;
+}
+
+.header__burger_bg p {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.header__burger.menu-opened {
+  left: 0px;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
 .burger-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +343,7 @@
   height: 26px;
   cursor: pointer;
   background: transparent;
+  z-index: 999;
 }
 
 .burger-button span {
@@ -332,8 +508,16 @@
 
 @font-face {
   font-family: "Raleway";
-  src: local("Raleway-SemiBoldItalic"), url("../fonts/Raleway-SemiBoldItalic.woff") format("truetype");
+  src: local("Raleway-SemiBoldItalic"), url("../fonts/Raleway-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway-MediumItalic"), url("../fonts/Raleway-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
@@ -687,6 +871,25 @@
   background: #337D5A;
 }
 
+.button_green {
+  height: 52px;
+  padding: 0px 40px;
+  min-width: 170px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: #337D5A;
+  border: 2px solid #337D5A;
+  border-radius: 3px;
+}
+
+.button_green:hover {
+  color: #337D5A;
+  background: #fff;
+}
+
 .buy-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1004,6 +1207,56 @@
   height: 9px;
 }
 
+.svg-social-white {
+  width: 80px;
+  height: 16px;
+}
+
+.svg-payment {
+  width: 48px;
+  height: 48px;
+}
+
+.svg-wallet {
+  width: 37px;
+  height: 37px;
+}
+
+.svg-car {
+  width: 45px;
+  height: 31.5px;
+}
+
+.svg-box {
+  width: 36px;
+  height: 36px;
+}
+
+.svg-supermarket {
+  width: 37px;
+  height: 37px;
+}
+
+.svg-shop {
+  width: 37px;
+  height: 37px;
+}
+
+.svg-table {
+  width: 49px;
+  height: 35px;
+}
+
+.svg-fitnes {
+  width: 45px;
+  height: 23.2px;
+}
+
+.svg-cake {
+  width: 43px;
+  height: 43px;
+}
+
 *,
 *::after,
 *::before {
@@ -1051,6 +1304,11 @@ body {
   letter-spacing: 0.01em;
   color: #1A2F3F;
   background: #FBFBFB;
+}
+
+body {
+  overflow-x: hidden;
+  margin-top: 179px;
 }
 
 html {
@@ -1618,6 +1876,10 @@ span {
             transform: translate(-50%, 0);
   }
 
+  body {
+    margin-top: 131px;
+  }
+
   .bg {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1702,3 +1964,5 @@ span {
     line-height: 40px;
   }
 }
+
+.webp .header__burger_bg{ background: url(../img/burger-fon.webp) top/cover no-repeat; }
