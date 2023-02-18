@@ -162,10 +162,69 @@
 }
 
 .header__shoping-card {
+  position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin-right: 5px;
+}
+
+.header__shoping-card > span::after {
+  content: "0";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  background: #93B474;
+  border-radius: 50%;
+}
+
+.header__shoping-card .shoping-card {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 19px;
+  white-space: nowrap;
+  max-width: 468px;
+  width: auto;
+  min-height: 229px;
+  border: 1.5px solid #337D5A;
+  background: #fff;
+}
+
+.header__shoping-card .shoping-card > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+  margin: 0px 30px;
+  border-bottom: 1px solid rgba(48, 48, 48, 0.2705882353);
+}
+
+.header__shoping-card .shoping-card input {
+  width: 44px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 0px 30px;
 }
 
 .header__menu {
@@ -1121,6 +1180,16 @@
   height: 28px;
 }
 
+.svg-eye {
+  width: 24px;
+  height: 24px;
+}
+
+.svg-copy {
+  width: 16px;
+  height: 21px;
+}
+
 .svg-arrow-green {
   width: 23px;
   height: 20px;
@@ -1304,6 +1373,96 @@
 .svg-filter {
   width: 23px;
   height: 21px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0px 23px;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  cursor: pointer;
+}
+
+.footer__logo img {
+  width: 54px;
+  height: 54px;
+}
+
+.footer__logo span {
+  margin-left: 8px;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 93px;
+  margin-top: 22px;
+  width: 100%;
+}
+
+.f-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.f-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px 50px;
+}
+
+.f-end__dev {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.f-end__dev span {
+  color: #337D5A;
+}
+
+.f-end__copywrite {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 *,
@@ -1907,6 +2066,16 @@ span {
   }
 }
 
+@media (max-width: 1120px) {
+  .footer {
+    display: none;
+  }
+
+  .f-end img {
+    display: none;
+  }
+}
+
 @media (max-width: 1100px) {
   .stat-prod {
     -webkit-box-orient: vertical;
@@ -1991,6 +2160,18 @@ span {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+  }
+
+  .footer__logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__logo span {
+    margin-left: 0px;
   }
 
   body {
