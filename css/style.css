@@ -48,6 +48,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  padding-right: 78px;
   margin: 7px 0px 0px 0px;
   font-size: 13px;
   line-height: 15px;
@@ -65,6 +67,12 @@
 
 .header__profile > a:first-child img {
   margin: 0px 7px -1px 0px;
+}
+
+.header__profile .language-list {
+  position: absolute;
+  top: -17px;
+  right: -11px;
 }
 
 .header__info {
@@ -117,7 +125,7 @@
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.02em;
-  color: #8A8A8A;
+  color: #303030;
 }
 
 .header__contacts > button {
@@ -530,6 +538,16 @@
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
+.item-goods .slide1 {
+  width: 109px;
+  height: 235px;
+}
+
+.item-goods .slide2 {
+  width: 243px;
+  height: 191px;
+}
+
 .item-goods:hover {
   border: 2px solid #93B474;
 }
@@ -750,6 +768,12 @@
   max-width: 739px;
   width: 100%;
   height: 518px;
+  cursor: pointer;
+}
+
+.contacts__map img {
+  width: 100%;
+  aspect-ratio: 739/518;
 }
 
 .info-contacts {
@@ -970,6 +994,16 @@
           flex-direction: column;
 }
 
+.news picture {
+  max-width: 408px;
+  width: 100%;
+}
+
+.news picture img {
+  width: 100%;
+  aspect-ratio: 408/270;
+}
+
 .news h2 {
   margin: 0px 0px 32px -3px;
 }
@@ -1075,6 +1109,16 @@
 .svg-arrow-bottom {
   width: 8px;
   height: 5px;
+}
+
+.svg-arrow-bottom-m {
+  width: 13px;
+  height: 8px;
+}
+
+.svg-warning {
+  width: 28px;
+  height: 28px;
 }
 
 .svg-arrow-green {
@@ -1257,6 +1301,11 @@
   height: 43px;
 }
 
+.svg-filter {
+  width: 23px;
+  height: 21px;
+}
+
 *,
 *::after,
 *::before {
@@ -1308,7 +1357,7 @@ body {
 
 body {
   overflow-x: hidden;
-  margin-top: 179px;
+  padding-top: 179px;
 }
 
 html {
@@ -1378,6 +1427,18 @@ span {
 .list {
   position: relative;
   cursor: pointer;
+  min-height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 14px 0px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list input {
@@ -1388,6 +1449,15 @@ span {
 
 .list label {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 100%;
+  height: inherit;
 }
 
 .list p {
@@ -1408,6 +1478,7 @@ span {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;
   -webkit-transition: 0.15s;
@@ -1415,9 +1486,15 @@ span {
   transition: 0.15s;
   visibility: hidden;
   opacity: 0;
-  min-width: 50px;
+  min-width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: #fff;
+}
+
+.list__item {
+  height: 48px;
+  background: #FBFBFB;
+  padding: 0px 14px 0px 16px !important;
 }
 
 .list__item:not(:last-child) {
@@ -1643,6 +1720,46 @@ span {
 
 .gallery__item {
   position: relative;
+}
+
+.gallery__item .item-small-min picture {
+  max-width: 409px;
+  width: 100%;
+}
+
+.gallery__item .item-small-min picture img {
+  width: 100%;
+  aspect-ratio: 409/404;
+}
+
+.gallery__item .item-small picture {
+  max-width: 520px;
+  width: 100%;
+}
+
+.gallery__item .item-small picture img {
+  width: 100%;
+  aspect-ratio: 520/556;
+}
+
+.gallery__item .item-middle picture {
+  max-width: 739px;
+  width: 100%;
+}
+
+.gallery__item .item-middle picture img {
+  width: 100%;
+  aspect-ratio: 739/556;
+}
+
+.gallery__item .item-big picture {
+  max-width: 100%;
+  width: 100%;
+}
+
+.gallery__item .item-big picture img {
+  width: 100%;
+  aspect-ratio: 1290/556;
 }
 
 .gallery__item h4 {
@@ -1877,7 +1994,7 @@ span {
   }
 
   body {
-    margin-top: 131px;
+    padding-top: 131px;
   }
 
   .bg {
@@ -1895,8 +2012,14 @@ span {
     width: 100%;
   }
 
-  .production .swiper-slide picture > img {
+  .production .swiper-slide picture {
+    max-width: 700px;
     width: 100%;
+  }
+
+  .production .swiper-slide picture img {
+    width: 100%;
+    aspect-ratio: 700/472;
   }
 
   .gallery {

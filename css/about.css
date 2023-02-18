@@ -68,7 +68,7 @@
 
 .company-story__boss picture img {
   width: 100%;
-  height: 493px;
+  aspect-ratio: 342/493;
 }
 
 .company-story__boss_info {
