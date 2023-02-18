@@ -1519,6 +1519,10 @@ body {
   padding-top: 179px;
 }
 
+main {
+  position: relative;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -1581,6 +1585,29 @@ span {
   padding-left: 15px !important;
   padding-right: 15px !important;
   margin: 0 auto;
+}
+
+.page-navigation {
+  position: absolute;
+  left: 0px;
+  top: 34px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  gap: 9px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 
 .list {
