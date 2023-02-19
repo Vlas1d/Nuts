@@ -12,7 +12,7 @@ defaults:
       cache_control: "public, max-age=86400"
   - scope:
       path: ""
-      type: "gif"
+      type: "webp"
     values:
       cache_control: "public, max-age=86400"
   - scope:
