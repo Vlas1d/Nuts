@@ -1,16 +1,146 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/head.html', {
-"title":"Регистрация",
-"thisStyle":"css/registration.min.css"
-})
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device - width, initial-scale = 1.0">
+    <meta name="description" content="Author: V.V. Sidyk, Category: Internet-Shop, Nuts, Price: 19 UAH">
+    <meta http-equiv="Cache-Control" content="max-age=86400">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap&_v=20230219193454"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap&_v=20230219193454"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css?_v=20230219193454">
+    <link rel="stylesheet" href="css/registration.min.css?_v=20230219193454">
+    <title>Регистрация</title>
+</head>
 
 <body>
-    @@include('html/header.html', {})
+    <header class="header">
+
+    <div class="header__top">
+        <img class="header__social svg-social" src="img/icons/social.svg" alt="social">
+        <span>Ваша персональная скидка - 5%</span>
+        <div class="header__profile">
+            <a href="autorization.html"><img class="svg-man" src="img/icons/man.svg" alt="man">Вход</a>
+            <a href="registration.html">Регистрация</a>
+
+            <div class="language-list list" id="language-list">
+                <label class="language-list__value list__value">Ru</label>
+                <img class="svg-arrow-bottom" src="img/icons/arrow-bottom.svg" alt="arrow-bottom">
+                <div class="language-list__items list__items"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="header__info">
+        <button class="burger-button" aria-label="burger-menu" title="menu">
+            <span></span>
+        </button>
+        <a href="index.html" class="header__logo">
+            <img class="svg-logo" src="img/icons/logo.svg" alt="logo">
+            <span>ОРЕХ<br>ПРИЧЕРНОМОРЬЯ</span>
+        </a>
+        <div class="header__contacts">
+            <div class="header__contacts_icons">
+                <a href="#"><img class="svg-viber" src="img/icons/viber.svg" alt="social"></a>
+                <a href="#"><img class="svg-telegram" src="img/icons/telegram.svg" alt="social"></a>
+                <a href="#"><img class="svg-whatsapp" src="img/icons/whatsapp.svg" alt="social"></a>
+            </div>
+            <div class="header__contacts_column">
+                <a href="#"><span>+38 (044)</span> 750-50-11</a>
+                <a href="#"><span>+38 (097)</span> 775-50-51</a>
+            </div>
+            <button class="button">Заказать звонок</button>
+            <span>Ждем Вашего звонка<br> ежедневно с 9 до 18</span>
+        </div>
+        <div class="header__shoping-card">
+            <img class="svg-bag" src="img/icons/bag.svg" alt="bag">
+            <span></span>
+            <!--
+            <div class="shoping-card">
+
+                <div><span>Орех соленый 80г.</span><input type="number" name="goods"><span>100 грн.</span></div>
+                <div><span>Орех соленый 80г.</span><input type="number" name="goods"><span>100 грн.</span></div>
+
+            </div>-->
+        </div>
+    </div>
+    <div class="header__menu">
+        <ul class="menu">
+            <li class="menu__item menu__item_active">
+                <a href="cataloge.html" class="menu__link">Магазин</a>
+            </li>
+            <li class="menu__item">
+                <a href="about.html" class="menu__link">О производстве</a>
+            </li>
+            <li class="menu__item">
+                <a href="payment.html" class="menu__link">Оплата и доставка</a>
+            </li>
+            <li class="menu__item">
+                <a href="business.html" class="menu__link">Оптовым и корпоративным клиентам</a>
+            </li>
+            <li class="menu__item">
+                <a href="news.html" class="menu__link">Новости и статьи</a>
+            </li>
+            <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="header__burger">
+        <button class="burger-close" aria-label="burger-menu-close" title="menu-close">
+            <span></span>
+        </button>
+        <a href="index.html" class="header__burger_logo">
+            <img class="svg-logo" src="img/icons/logo.svg" alt="logo">
+            <span>ОРЕХ<br>ПРИЧЕРНОМОРЬЯ</span>
+        </a>
+        <div class="header__burger_profile">
+            <div><a href="autorization.html"><img class="svg-man" src="img/icons/man.svg" alt="man">Вход</a>
+                <a href="registration.html">Регистрация</a>
+            </div>
+            <img class="header__social svg-social" src="img/icons/social.svg" alt="social">
+        </div>
+        <ul class="burger-menu">
+            <li class="burger-menu__item burger-menu__item_active">
+                <a href="cataloge.html" class="burger-menu__link">Магазин</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="about.html" class="burger-menu__link">О производстве</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="payment.html" class="burger-menu__link">Оплата и доставка</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="business.html" class="burger-menu__link">Оптовым и корпоративным клиентам</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="news.html" class="burger-menu__link">Новости и статьи</a>
+            </li>
+            <li class="burger-menu__item">
+                <a href="contacts.html" class="burger-menu__link">Контакты</a>
+            </li>
+        </ul>
+        <div class="header__burger_bg">
+            <h2>Орех Причерноморья</h2>
+            <p>Единственный в Украине сад
+                совместного выращивания
+                фундука и грецкого ореха</p>
+        </div>
+    </div>
+
+</header>
     <main>
         <span class="page-navigation container" style="color: rgb(66, 66, 66)">
             <a href="index.html">Главная</a>
-            <img class="svg-arrow-white" style="width: 12px;" src="@img/icons/arrow-green.svg" alt="arrow-white">
+            <img class="svg-arrow-white" style="width: 12px;" src="img/icons/arrow-green.svg" alt="arrow-white">
             <a href="#">Регистрация</a>
         </span>
         <section class="reg container">
@@ -30,12 +160,12 @@
                     <h5 class="reg__adress-title">2. Адрес</h5>
                     <div class="country-list list" id="country-list">
                         <label class="country-list__value list__value">Страна</label>
-                        <img class="svg-arrow-bottom" src="@img/icons/arrow-bottom.svg" alt="arrow-bottom">
+                        <img class="svg-arrow-bottom" src="img/icons/arrow-bottom.svg" alt="arrow-bottom">
                         <div class="country-list__items list__items"></div>
                     </div>
                     <div class="region-list list" id="region-list">
                         <label class="region-list__value list__value">Область</label>
-                        <img class="svg-arrow-bottom" src="@img/icons/arrow-bottom.svg" alt="arrow-bottom">
+                        <img class="svg-arrow-bottom" src="img/icons/arrow-bottom.svg" alt="arrow-bottom">
                         <div class="region-list__items list__items"></div>
                     </div>
                     <input type="text" id="city" name="city" placeholder="Город*">
@@ -56,12 +186,12 @@
                         <h5 class="fop-address">2. Юридический адрес</h5>
                         <div class="country-list_legal list" id="country-list_legal">
                             <label class="country-list__value_legal list__value">Страна</label>
-                            <img class="svg-arrow-bottom" src="@img/icons/arrow-bottom.svg" alt="arrow-bottom">
+                            <img class="svg-arrow-bottom" src="img/icons/arrow-bottom.svg" alt="arrow-bottom">
                             <div class="country-list__items_legal list__items"></div>
                         </div>
                         <div class="region-list_legal list" id="region-list_legal">
                             <label class="region-list__value_legal list__value">Область</label>
-                            <img class="svg-arrow-bottom" src="@img/icons/arrow-bottom.svg" alt="arrow-bottom">
+                            <img class="svg-arrow-bottom" src="img/icons/arrow-bottom.svg" alt="arrow-bottom">
                             <div class="region-list__items_legal list__items"></div>
                         </div>
                         <input type="text" id="city1" name="city" placeholder="Город*">
@@ -79,10 +209,91 @@
             </form>
         </section>
         <section class="contacts-reg">
-            @@include('html/contacts.html', {})
+            <section class="contacts container">
+    <div class="contacts__info info-contacts">
+        <h2>Контакты</h2>
+        <div class="info-contacts__tel">
+            <img class="svg-tel" loading="lazy" src="img/icons/tel.svg" alt="phone">
+            <div class="info-contacts__mobile">
+                <a href="tel:+38 (095) 711 11 11">+38 (095) 711 11 11</a><br>
+                <a href="tel:+38 (095) 711 11 11">+38 (095) 711 11 11</a>
+            </div>
+            <div class="header__contacts_icons info-contacts__social">
+                <a href="#"><img class="svg-viber" loading="lazy" src="img/icons/viber.svg" alt="social"></a>
+                <a href="#"><img class="svg-telegram" loading="lazy" src="img/icons/telegram.svg" alt="social"></a>
+                <a href="#"><img class="svg-whatsapp" loading="lazy" src="img/icons/whatsapp.svg" alt="social"></a>
+            </div>
+        </div>
+        <div class="info-contacts__mail">
+            <img class="svg-mail" loading="lazy" src="img/icons/mail.svg" alt="mail">
+            <a href="mail:nuts@nbsc.com.ua">nuts@nbsc.com.ua</a>
+        </div>
+        <div class="info-contacts__office">
+            <img class="svg-office" loading="lazy" src="img/icons/office.svg" alt="office">
+            <div>
+                <h5>Офис и отдел продаж</h5>
+                <p>Украина, г. Одесса,<br>
+                    ул. Космонавтов, 32</p>
+            </div>
+        </div>
+        <div class="info-contacts__dev">
+            <img class="svg-tree" loading="lazy" src="img/icons/tree.svg" alt="tree">
+            <div>
+                <h5>Производство</h5>
+                <p>Украина, Одесская обл,<br>
+                    с. Яськи, ул. Центральная, 232</p>
+            </div>
+        </div>
+    </div>
+    <div class="contacts__map">
+        <picture><source srcset="img/map.webp" type="image/webp"><img loading="lazy" src="img/map.jpg" alt="google-map"></picture>
+    </div>
+</section>
         </section>
     </main>
-    @@include('html/footer.html', {})
+    <footer>
+
+    <section class="footer container">
+        <a href="index.html" class="footer__logo">
+            <img class="svg-logo" src="img/icons/logo.svg" alt="logo">
+            <span>ОРЕХ<br>ПРИЧЕРНОМОРЬЯ</span>
+        </a>
+        <div class="footer__menu">
+            <ul class="f-menu">
+                <li class="f-menu__item">
+                    <a href="cataloge.html" class="f-menu__link">Магазин</a>
+                </li>
+                <li class="f-menu__item">
+                    <a href="business.html" class="f-menu__link">Корпоративным клиентам</a>
+                </li>
+                <li class="f-menu__item">
+                    <a href="payment.html" class="f-menu__link">Оплата и доставка</a>
+                </li>
+                <li class="f-menu__item">
+                    <a href="about.html" class="f-menu__link">О производстве</a>
+                </li>
+                <li class="f-menu__item">
+                    <a href="news.html" class="f-menu__link">Новости и статьи</a>
+                </li>
+                <li class="f-menu__item">
+                    <a href="gallery.html" class="f-menu__link">Галерея</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="f-end container">
+        <div class="f-end__dev">
+            Разработано <span><b>AVADA</b> MEDIA</span>
+        </div>
+        <span class="f-end__copywrite">
+            Copyright © 2019. Все права защищены
+        </span>
+        <img class="header__social svg-social" src="img/icons/social.svg" alt="social">
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230219193454"></script>
+    <script src="js/script.min.js?_v=20230219193454"></script>
+</footer>
 </body>
 
 </html>
