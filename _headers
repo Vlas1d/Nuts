@@ -1,0 +1,12 @@
+# Set cache control headers for certain file types
+/*.jpg
+Cache-Control: public, max-age=86400
+
+/*.png
+Cache-Control: public, max-age=86400
+
+/*.gif
+Cache-Control: public, max-age=86400
+
+/*.webp
+Cache-Control: public, max-age=86400
