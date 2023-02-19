@@ -97,6 +97,16 @@
   padding: 82px 0px 100px;
 }
 
+.nuts-vitamins picture {
+  max-width: 410px;
+  width: 100%;
+}
+
+.nuts-vitamins picture img {
+  width: 100%;
+  aspect-ratio: 410/525;
+}
+
 .nuts-vitamins > p {
   font-size: 18px;
   line-height: 28px;
@@ -146,16 +156,6 @@
   font-size: 18px;
   line-height: 23px;
   color: #fff;
-}
-
-.nuts-vitamins__slide picture {
-  max-width: 410px;
-  width: 100%;
-}
-
-.nuts-vitamins__slide picture img {
-  width: 100%;
-  aspect-ratio: 410/525;
 }
 
 .nuts-vitamins__slide_green {
