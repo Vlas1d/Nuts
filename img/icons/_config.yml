@@ -1,0 +1,22 @@
+# Set cache control headers for certain file types
+defaults:
+  - scope:
+      path: ""
+      type: "jpg"
+    values:
+      cache_control: "public, max-age=86400"
+  - scope:
+      path: ""
+      type: "png"
+    values:
+      cache_control: "public, max-age=86400"
+  - scope:
+      path: ""
+      type: "webp"
+    values:
+      cache_control: "public, max-age=86400"
+  - scope:
+      path: ""
+      type: "svg"
+    values:
+      cache_control: "public, max-age=86400"
